@@ -1,0 +1,36 @@
+.box-anim-1{
+  height: 55px;
+  width: 55px;
+  background-color: #484848;
+
+  position: relative;
+
+}
+
+.box-anim-1 span{
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: red;
+
+  -webkit-animation: myfirst 2s ease-in-out 0s infinite; 
+  animation: myfirst 2s ease-in-out 0s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+  0%   {background-color:red; right:4px; top:4px;}
+  25%  {background-color:yellow; right:4px; top:36px;}
+  50%  {background-color:blue; right:36px; top:36px;}
+  75%  {background-color:green; right:36px; top:4px;}
+  100% {background-color:red; right:4px; top:4px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+  0%   {background-color:red; right:4px; top:4px;}
+  25%  {background-color:yellow; right:4px; top:36px;}
+  50%  {background-color:blue; right:36px; top:36px;}
+  75%  {background-color:green; right:36px; top:4px;}
+  100% {background-color:red; right:4px; top:4px;}
+}
